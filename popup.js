@@ -26,10 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const urlInfoDiv = document.createElement('div')
         urlInfoDiv.classList.add('tab-info')
 
-        // Display a truncated version of the URL (e.g., first 30 characters)
-        const truncatedUrl =
-          tab.url.length > 30 ? tab.url.substring(0, 30) + '...' : tab.url
-        urlInfoDiv.textContent = truncatedUrl
+        urlInfoDiv.textContent = new URL(tab.url).pathname
 
         // Add title and URL info to the list item
         li.appendChild(titleDiv)
