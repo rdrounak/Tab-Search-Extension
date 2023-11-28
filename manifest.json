@@ -6,6 +6,7 @@
   "icons": {
     "48": "icon.png"
   },
+  "license": "MIT",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
